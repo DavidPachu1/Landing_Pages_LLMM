@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/formulario.png" type="image/x-icon">
+    <title>Contacta conmigo</title>
+</head>
+<body>
+    <h1 class="tituloFormulario">Formulario de contacto</h1>
+    <div class="formulario">
+        <form action="mailto:davidfernandez20310@gmail.com" method="post">
+            <div class="elemento">
+                <label for="Nombre">Nombre: </label>
+                <input type="text" name="nombre" id="nombre" required>
+            </div>
+            <div class="elemento">
+                <label for="apellidos">Apellidos: </label>
+                <input type="text" name="apellidos" id="apellidos">
+            </div>
+            <div class="elemento">
+                <label for="email">Email: </label>
+                <input type="text" name="email" id="email" required>
+            </div>
+            <div class="elemento">
+                <label for="fnaci">Fecha de nacimiento: </label>
+                <input type="date" name="fnaci" id="fnaci">
+            </div>
+            <div class="elemento">
+                <label for="sexo">Indica tu sexo: </label>
+                <input type="radio" name="sexo" id="hombre">Hombre
+                <input type="radio" name="sexo" id="mujer">Mujer
+                <input type="radio" name="sexo" id="nsnc">Prefiero no decirlo
+            </div>
+            <div class="elemento">
+                <label for="eleccion">Elige el tema de tu consulta: </label>
+                <select name="eleccion">
+                    <option value="1"></option>
+                    <option value="2">Educador Infantil</option>
+                    <option value="3">Desarrollo de aplicaciones</option>
+                    <option value="4">Desarrollo Páginas Web</option>
+                    <option value="5">Entrenador de fútbol</option>
+                    <option value="6">Otro</option>
+                </select>
+            </div>
+            <div class="elemento">
+                <label for="consulta">Describe brevemente tu consulta: </label>
+                <textarea name="consulta" id="consulta"></textarea>
+            </div>
+            <div class="elemento">
+                Adjunta tu CV o proyectos para saber un poco más de ti: <input type="file" name="adjunto" accept=".pdf" multiple>
+                <input type="reset" value="Borrar">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
